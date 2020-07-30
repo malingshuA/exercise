@@ -46,7 +46,7 @@ public class KuangCode {
         dc.setDbType(DbType.MYSQL);// 数据库类型
         //类型转换 默认mysql
         //dc.setTypeConvert(new MySqlTypeConvert());
-        dc.setUrl("jdbc:mysql://47.96.151.45:3306/weiqian?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
+        dc.setUrl("jdbc:mysql://47.96.151.45:3306/weiqiann?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC");
         dc.setDriverName("com.mysql.cj.jdbc.Driver");
         dc.setUsername("root");
         dc.setPassword("123456");
@@ -55,8 +55,8 @@ public class KuangCode {
         // 包的配置
         PackageConfig pc = new PackageConfig();
         // 设置模块名称
-        pc.setModuleName("exercise");
-        pc.setParent("com.example.majiang");
+        pc.setModuleName("");
+        pc.setParent("com.exercise.exercise");
         pc.setEntity("entity");
         pc.setMapper("mapper");
         pc.setService("service");
@@ -66,7 +66,7 @@ public class KuangCode {
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         //映射表名
-        strategy.setInclude("useree");
+        strategy.setInclude("student");
         //配置命名规则, 如下:下划线转为驼峰命名
         strategy.setNaming(NamingStrategy.underline_to_camel);
         //配置命名规则, 如下:下划线转为驼峰命名,列的名字
