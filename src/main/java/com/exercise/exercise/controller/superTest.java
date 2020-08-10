@@ -1,9 +1,12 @@
 package com.exercise.exercise.controller;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+
 public class superTest {
-//    public String father(){
-//        String aa = "1111";
-//
-//
-//    }
+
+    @RequestMapping("shouye" )
+    public Object shouye(){
+
+        return null;
+    }
 }

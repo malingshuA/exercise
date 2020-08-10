@@ -1,6 +1,6 @@
 package com.exercise.exercise.service;
 
-import com.exercise.exercise.entity.Student;
+import com.exercise.exercise.entity.Usere;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,10 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author malingshu
- * @since 2020-07-29
+ * @since 2020-08-10
  */
-public interface StudentService extends IService<Student> {
-
-    Student shouye();
+public interface UsereService extends IService<Usere> {
 
 }

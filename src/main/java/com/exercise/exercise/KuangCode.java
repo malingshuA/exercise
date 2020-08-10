@@ -66,7 +66,7 @@ public class KuangCode {
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
         //映射表名
-        strategy.setInclude("student");
+        strategy.setInclude("usere");
         //配置命名规则, 如下:下划线转为驼峰命名
         strategy.setNaming(NamingStrategy.underline_to_camel);
         //配置命名规则, 如下:下划线转为驼峰命名,列的名字
