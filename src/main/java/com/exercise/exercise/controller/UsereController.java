@@ -1,9 +1,7 @@
 package com.exercise.exercise.controller;
 
 
-import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author malingshu
- * @since 2020-08-10
+ * @since 2020-08-19
  */
 @RestController
 @RequestMapping("/usere")
