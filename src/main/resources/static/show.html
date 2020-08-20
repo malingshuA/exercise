@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="jquery.js"></script>
+        <script>
+    $(function(){
+        $.ajax({
+            url: '/findAllUser',
+            type: 'get',
+            dataType: 'json',
+            success: function (data) {
+                $.each(data,function (index, item) {
+                    var tr;
+                    tr = '<td>' + item.id + '</td>' + '<td>' + item.name + '</td>' + '<td>' + item.password +                             '</td>'+'<td>' + '<a href="deleteUserById?id= "+item.id">' +'删除'+'</a>'+ '</td>';
+                    $("#table").append('<tr>' + tr + '</tr>')
+                })
+            }
+        })
+    })
+</script>
+
+</head>
+<body>
+    <p>所有用户信息</p>
+    <table id="table">
+           <tr>
+                <td>编号</td>
+                <td>姓名</td>
+                <td>密码</td>
+                <td>编辑</td>
+            </tr>
+        </table>
+    <a href="addUser.html">添加用户</a>
+</body>
+</html>
