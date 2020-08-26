@@ -45,7 +45,7 @@ public class Usere implements Serializable {
     /**
      * 账号
      */
-    private Integer account;
+    private String account;
 
     /**
      * 密码
