@@ -8,3 +8,18 @@ spring:
   mybatis:
     configuration:
       map-underscore-to-camel-case: true
+  #关闭引擎，模板的缓存
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+
+  #我们配置文件的真实位置
+  messages:
+    basename: i18n.login
+
+
+#配置一个虚拟目录
+server:
+  servlet:
+    context-path: /kuang
+
