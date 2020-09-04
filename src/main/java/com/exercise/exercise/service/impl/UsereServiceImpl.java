@@ -31,7 +31,8 @@ public class UsereServiceImpl extends ServiceImpl<UsereMapper, Usere> implements
             //eturn model.addAttribute("error","账号不能为空");
         }
         if (account.length()==11){
-            String aa = "^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(17[013678])|(18[0,5-9]))\\\\d{8}$";
+            String aa = "^((13[0-9])|(14[0,1,4-9])|(15[0-3,5-9])|(16[2,5,6,7])|(17[0-8])|(18[0-9])|(19[0-3,5-9]))\\d{8}$";
+           // String aa = "^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(17[013678])|(18[0,5-9]))\\\\d{8}$";
             boolean bb = Pattern.matches(aa,account);
             if(!bb){
                 return "手机号格式错误，请重新输入";

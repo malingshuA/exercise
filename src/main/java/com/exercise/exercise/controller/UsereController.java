@@ -3,10 +3,9 @@ package com.exercise.exercise.controller;
 
 import com.exercise.exercise.service.UsereService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -16,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @author malingshu
  * @since 2020-08-19
  */
-@RestController
+//@RestController
 @RequestMapping("/usere")
+@Controller
 public class UsereController {
 
     @Autowired
@@ -30,6 +30,12 @@ public class UsereController {
                              @RequestParam("passwords") String passwords){
         usereService.registered(account,password,passwords);
         return null;
+    }
+
+    @RequestMapping("/hello")
+    public String hello(Model model){
+        model.addAttribute("msg","王八蛋");
+        return "index";
     }
 //    public Object registered(Param("account") int account,
 //                             Param("password") String password,
