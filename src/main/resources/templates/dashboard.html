@@ -44,9 +44,11 @@
 <body>
 <P>麻蛋，这是一个页面</P>
 <p>[[${session.loginUser}]]</p>
-<a th:herf="@{/emps}">
-    员工管理
-</a>
+<div>
+    <a th:href="@{/emps}"> 员工管理 </a>
+    <a href="www.baidu.com">1111</a>
+</div>
+
 <!--顶部导航栏-->
 <!--<div th:replace="~{commons/commons::topbar}"></div>-->
 

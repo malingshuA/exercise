@@ -29,7 +29,7 @@ public class UsereController {
                              @RequestParam("password") String password,
                              @RequestParam("passwords") String passwords){
         usereService.registered(account,password,passwords);
-        return null;
+        return "注册成功";
     }
 
     @RequestMapping("/hello")
